@@ -9,7 +9,7 @@
     
     <?php
     
-    echo("Hello World this is my first program");
+    echo strrev("Hello World this is my first program");
 
     ?>
 
