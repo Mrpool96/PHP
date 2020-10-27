@@ -15,7 +15,14 @@
               <div class="card card-fluid">
                   <div class="jumbotron">File-Handling</div>
                   <?
-                    echo readfile("PHP Notes.txt"); //The readfile() function reads a file and writes it to the output buffer.
+                    //echo readfile("PHP Notes.txt"); //The readfile() function reads a file and writes it to the output buffer.
+
+                   $myfile = fopen("PHP notes.txt","r") or die("Unable to open a file");
+                   echo fread($myfile, filesize("PHP Notes.txt")
+                    //The fread() function reads from an open file.
+                );
+                   fclose($myfile);
+                   //The fclose() function is used to close an open file.
                   ?>
                   </div>
               </div>
