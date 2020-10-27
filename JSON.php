@@ -10,14 +10,16 @@
                 <div class="col-md-12">
                     <div class="jumbotron jumbtron-fluid"><h1>JSON Encode() and Decode()</h1></div>
                     <h2>
-                       <? echo "Today's date:-" .date("d/m/Y") . "<br>" ;
+                       <? //echo "Today's date:-" .date("d/m/Y") . "<br>" ;
 
-                            date_default_timezone_set("Asia/Kolkata");
-                            echo "Time is:- " .date("H:i:sa") ."<br>" ;
+                            //date_default_timezone_set("Asia/Kolkata");
+                            //echo "Time is:- " .date("H:i:sa") ."<br>" ;
 
                             //json encode
 
-                            
+                            $cars = array("Volvo", "BMW", "Toyota");
+
+                                echo json_encode($cars);
                        ?>
                     </h2>
 
