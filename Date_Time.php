@@ -18,7 +18,12 @@
             <h1><? echo "Today Date is:- " . date("Y/m/d") . "<br>";
                     date_default_timezone_set("Asia/Kolkata");
                     echo"Time is:- " .date("h:i:sa") . "<br>";
+
             ?></h1>
+
+            <?
+                include 'Example.php'
+            ?>
             </div>
         </div>
         </div>
