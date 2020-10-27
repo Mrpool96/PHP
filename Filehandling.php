@@ -11,7 +11,14 @@
   <div class="container-fluid">
       <div class="row">
           <div class="col-md-12">
-              
+              <div class="col-md-6">
+              <div class="card card-fluid">
+                  <div class="jumbotron">File-Handling</div>
+                  <?
+                    echo readfile("PHP Notes.txt"); //The readfile() function reads a file and writes it to the output buffer.
+                  ?>
+                  </div>
+              </div>
           </div>
       </div>
   </div>
